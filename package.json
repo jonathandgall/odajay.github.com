@@ -1,0 +1,24 @@
+{
+  "name": "odajay.github.com",
+  "version": "1.0.0",
+  "description": "Portfolio of Jonathan Gall",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odajay/odajay.github.com.git"
+  },
+  "author": "Jonathan Gall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odajay/odajay.github.com/issues"
+  },
+  "homepage": "https://github.com/odajay/odajay.github.com#readme",
+  "devDependencies": {
+    "grunt-pagespeed": "^2.0.1",
+    "load-grunt-tasks": "^3.5.2",
+    "ngrok": "^2.2.3"
+  }
+}
