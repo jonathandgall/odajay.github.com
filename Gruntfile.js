@@ -7,10 +7,10 @@
  *
  * Modified by Jonathan Gall
  **/
- 
- var ngrok = require('ngrok');
 
-module.exports = function (grunt) {
+var ngrok = require('ngrok');
+
+module.exports = function(grunt) {
     'use strict';
     //Load grunt tasks
     require('load-grunt-tasks')(grunt);
@@ -34,15 +34,23 @@ module.exports = function (grunt) {
                     strategy: 'mobile'
                 }
             }
-        }
+        },
+        watch: {
+            html: {
+                files: '*.html',
+                options: {
+                    livereload: true,
+                },
+            },
+        },
     });
 
     // Register customer task for ngrok
-    grunt.registerTask('udacity-ngrok', 'Run pagespeed with ngrok', function () {
+    grunt.registerTask('udacity-ngrok', 'Run pagespeed with ngrok', function() {
         var done = this.async();
         var port = 8080;
 
-        ngrok.connect(port, function (err, url) {
+        ngrok.connect(port, function(err, url) {
             if (err !== null) {
                 grunt.fail.fatal(err);
                 return done();
@@ -56,6 +64,6 @@ module.exports = function (grunt) {
 
     // Register default tasks
     grunt.registerTask('default', [
-        'udacity-ngrok'
+        'udacity-ngrok', 'watch'
     ]);
 };

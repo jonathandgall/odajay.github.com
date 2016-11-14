@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/odajay/odajay.github.com#readme",
   "devDependencies": {
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-pagespeed": "^2.0.1",
     "load-grunt-tasks": "^3.5.2",
     "ngrok": "^2.2.3"
