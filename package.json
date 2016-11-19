@@ -21,5 +21,8 @@
     "grunt-pagespeed": "^2.0.1",
     "load-grunt-tasks": "^3.5.2",
     "ngrok": "^2.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5"
   }
 }
