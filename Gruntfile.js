@@ -35,6 +35,14 @@ module.exports = function(grunt) {
                 }
             }
         },
+        copy: {
+            main: {
+                expand: true,
+                cwd: 'node_modules/bootstrap/dist/',
+                src: '**',
+                dest: 'dist/',
+            },
+        },
         watch: {
 
             html: {
@@ -44,6 +52,7 @@ module.exports = function(grunt) {
                 },
             },
         },
+
     });
 
     // Register customer task for ngrok
@@ -65,6 +74,6 @@ module.exports = function(grunt) {
 
     // Register default tasks
     grunt.registerTask('default', [
-        'udacity-ngrok', 'watch'
+        'udacity-ngrok', 'copy', 'watch'
     ]);
 };
