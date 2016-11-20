@@ -28,11 +28,25 @@ h2 {
     height: 80vh;
 }
 
+.card {
+    background-color: rgba(255, 255, 255, 0);
+    /*border: 2px;*/
+    /*    border-left: 10px solid rgba(255, 255, 0, 1);
+*/
+    font-family: 'Arvo', sans-serif;
+    color: white;
+    opacity: 0.8;
+}
+
 .vcenter {
     min-height: 40vh;
     /* These two lines are counted as one :-)       */
     display: flex;
     align-items: center;
+}
+
+.mb5 {
+    margin-bottom: 5vh;
 }
 
 .firstslide {
