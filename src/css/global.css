@@ -38,6 +38,7 @@ h2 {
     opacity: 0.8;
 }
 
+
 .vcenter {
     min-height: 40vh;
     /* These two lines are counted as one :-)       */
@@ -49,14 +50,14 @@ h2 {
     margin-bottom: 5vh;
 }
 
-.firstslide {
+.slide1 {
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 100%);
     padding-left: 0;
 }
 
-.secondslide {
+.slide2 {
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to left, rgba(203, 96, 179, 1) 0%, rgba(219, 54, 164, 1) 100%);
@@ -64,7 +65,16 @@ h2 {
     padding-left: 0;
 }
 
-.thirdslide {
+.slide3 {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, rgba(115, 96, 179, 1) 0%, rgba(116, 116, 193, 1) 100%);
+    ;
+    padding-left: 0;
+}
+
+
+.slide4 {
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to left, rgba(48, 50, 54, 1) 0%, rgba(48, 50, 54, 1) 100%);
