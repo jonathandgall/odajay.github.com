@@ -1,0 +1,47 @@
+@keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: black; } }
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+#container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#teletype {
+  font-family: monospace;
+  font-size: 2rem;
+  display: block;
+  width: 33rem; }
+
+#teletype span {
+  animation: blink 1s step-end infinite; }
+
+form {
+  background: #333;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: 1s; }
+
+#typer {
+  padding: .4rem;
+  font-size: inherit;
+  width: 36rem; }
+
+input[type="submit"] {
+  font-size: inherit;
+  display: inline-block;
+  padding: .3rem; }
+
+.hideaway {
+  transform: translateY(5vw); }
+
+/*# sourceMappingURL=thriller.css.map */

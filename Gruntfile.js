@@ -42,11 +42,31 @@ module.exports = function(grunt) {
                 src: '**',
                 dest: 'dist/',
             },
+            second:{
+                expand: true,
+                cwd: 'node_modules/fullpage.js/dist/',
+                src: '**',
+                dest: 'dist/',
+            }
+        },
+        sass: {
+            dist: {
+                files: [{
+                    'src/css/thriller.css':'src/scss/thriller.scss',
+                    'src/css/particle.css':'src/scss/particle.scss'
+                }]
+            }
         },
         watch: {
-
+            css: {
+                files: 'src/scss/*.scss',
+                tasks: ['sass'],
+                options: {
+                    livereload: true,
+                },
+            },
             html: {
-                files: ['*.html','src/**/*', 'dist/**/*'],
+                files: ['*.html', 'src/**/*', 'dist/**/*'],
                 options: {
                     livereload: true,
                 },
@@ -74,6 +94,6 @@ module.exports = function(grunt) {
 
     // Register default tasks
     grunt.registerTask('default', [
-        'udacity-ngrok', 'copy', 'watch'
+        'udacity-ngrok', 'copy', 'sass', 'watch'
     ]);
 };
