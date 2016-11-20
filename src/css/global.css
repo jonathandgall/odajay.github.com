@@ -1,14 +1,38 @@
-/*html { 
-  background: url(blue-poly-bg.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
+h1 {
+    font-family: 'Montserrat', serif;
+    font-variant-caps: small-caps;
+}
 
-.grey {
+h2 {
+    font-family: 'Arvo', sans-serif;
     color: white;
-    background-color: grey;
+}
+
+.centered {
+    margin: auto;
+}
+
+.vh20 {
+    height: 20vh;
+}
+
+.vh40 {
+    height: 40vh;
+}
+
+.vh60 {
+    height: 60vh;
+}
+
+.vh80 {
+    height: 80vh;
+}
+
+.vcenter {
+    min-height: 40vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
 
 .firstslide {
@@ -36,14 +60,6 @@
 
 
 }
-h1 {
-    font-family: 'Montserrat', serif;
-    font-variant-caps: small-caps;
-}
-h2 {
-    font-family: 'Arvo', sans-serif;
-    color: white;
-}
 .itsup {
     height: 20vh;
 }
@@ -58,26 +74,6 @@ h2 {
     color: white;
     font-size: 2rem;
 }
-.underlinett {
-    margin: auto;
-    padding-top: 0;
-    height: 5px;
-    width: 700px;
-}
-@media screen and (max-width: 1096px) {
-    .underlinett {
-        display: none;
-    }
-    
-    ;
-}
-.centered {
-    margin: auto;
-}
-
-/*canvas {
-    border:1px solid red;
-}*/
 .navbar-brand {
     font-size: calc(0.6vw + 0.6vh + .2vmin);
     font-family: 'Arvo', sans-serif;
