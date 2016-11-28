@@ -1,12 +1,42 @@
 h1 {
-    font-family: 'Montserrat', serif;
-    font-variant-caps: small-caps;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    line-height: calc(2.5vw + 2.5vh + .2vmin);
+    text-align: left;
+    font-size: calc(2.5vw + 2.5vh + .2vmin);
 }
 
 h2 {
-    font-family: 'Arvo', sans-serif;
+    font-family: 'Neuton', serif;
     color: white;
+    font-weight: 200;
+    
+    line-height: calc(1.5vw + 1.5vh + .8vmin);
+    text-align: left;
+    font-size: calc(1.5vw + 1.5vh + .8vmin)
 }
+
+.fancy4 {
+  border-width: 0 0 15px;
+  border-style: solid;
+  -webkit-border-image: -webkit-linear-gradient(45deg, #0d3349, #155274) 10% round;
+       -o-border-image: linear-gradient(45deg, #0d3349, #155274) 10% round;
+          border-image: linear-gradient(45deg, #0d3349, #155274) 10% round;
+          padding-bottom: -15px;
+}
+.fancy2 {/*
+  background-image
+: linear-gradient(to left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 100%);*/
+  display:inline-block;
+  height:calc(2.5vw + 2.5vh + .8vmin);
+  border: solid 1px white;
+  baseline-shift : super;
+
+}
+
+/*body {
+  padding: 1.5rem;
+}*/
 
 .centered {
     margin: auto;
@@ -46,6 +76,11 @@ h2 {
     opacity: 0.8;
 }
 
+.bio {
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
 .vcenter {
     min-height: 40vh;
     /* These two lines are counted as one :-)       */
@@ -58,14 +93,12 @@ h2 {
 }
 
 .fullvh {
-height: 100vh;
+    height: 100vh;
 }
 
 .slide1 {
     height: 100vh;
- 
     background-color: rgba(24, 24, 24, 1);
-    /*    padding-left: 0;*/
 }
 
 .slide1 .cube1 {
@@ -85,7 +118,6 @@ height: 100vh;
 
 .slide2 {
     height: 100vh;
-
     background-image: linear-gradient(to left, rgba(203, 96, 179, 1) 0%, rgba(219, 54, 164, 1) 100%);
     ;
 }
@@ -122,6 +154,18 @@ height: 100vh;
     color: white;
     font-size: 2rem;
 }
+.title {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+.contenu {
+    font-family: 'Neuton', serif;
+    ;
+    color: white;
+    font-weight: 200;
+    font-size: 2rem;
+}
 .navbar-brand {
     font-size: calc(0.6vw + 0.6vh + .2vmin);
     font-family: 'Arvo', sans-serif;
@@ -140,4 +184,18 @@ height: 100vh;
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
+}
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Aligner-item {
+    max-width: 70%;
+}
+.Aligner-item--top {
+    align-self: flex-start;
+}
+.Aligner-item--bottom {
+    align-self: flex-end;
 }
