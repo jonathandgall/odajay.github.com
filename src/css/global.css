@@ -12,8 +12,16 @@ h2 {
     margin: auto;
 }
 
+.vh10 {
+    height: 10vh;
+}
+
 .vh20 {
     height: 20vh;
+}
+
+.vh30 {
+    height: 30vh;
 }
 
 .vh40 {
@@ -38,7 +46,6 @@ h2 {
     opacity: 0.8;
 }
 
-
 .vcenter {
     min-height: 40vh;
     /* These two lines are counted as one :-)       */
@@ -50,16 +57,35 @@ h2 {
     margin-bottom: 5vh;
 }
 
+.fullvh {
+height: 100vh;
+}
+
 .slide1 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    background-color: rgba(24, 24, 24, 1);
+    /*    padding-left: 0;*/
+}
+
+.slide1 .cube1 {
+    border: 2px solid white;
     background-image: linear-gradient(to left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 100%);
-    padding-left: 0;
+}
+
+.slide1 .cube2 {
+    background-image: linear-gradient(to left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    border: 2px solid white
+}
+
+.slide1 .cube3 {
+    background-image: linear-gradient(to left, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    border: 2px solid white
 }
 
 .slide2 {
     height: 100vh;
-    width: 100vw;
+
     background-image: linear-gradient(to left, rgba(203, 96, 179, 1) 0%, rgba(219, 54, 164, 1) 100%);
     ;
     padding-left: 0;
@@ -72,7 +98,6 @@ h2 {
     ;
     padding-left: 0;
 }
-
 
 .slide4 {
     height: 100vh;
@@ -103,4 +128,17 @@ h2 {
     font-family: 'Arvo', sans-serif;
     text-align: right;
     float: right;
+}
+@media only screen and (max-width: 300px) {
+    .hide {
+        display: none;
+    }
+}
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
 }
